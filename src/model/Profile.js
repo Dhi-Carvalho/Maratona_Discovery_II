@@ -1,15 +1,13 @@
-let data = {
-  name: "Dhi Carvalho",
-  avatar: "https://avatars.githubusercontent.com/u/67021257?v=4",
-  "monthly-budget": 3000,
-  "days-per-week": 5,
-  "hours-per-day": 5,
-  "vacation-per-year": 4,
-  "value-hour": 75,
-};
+const Database = require('../db/config')
 
 module.exports = {
-    get(){
+    async get(){
+        const db = await Database()
+
+        const data = await db.get(`SELECT * FROM profile`)
+
+        await db.close()
+        
         return data;
     },
     update(newData){
