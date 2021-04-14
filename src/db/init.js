@@ -20,7 +20,7 @@ const initDb = {
       name TEXT,
       daily_hours INT,
       total_hours INT,
-      ceated_at DATETIME
+      created_at DATETIME
     )`);
 
     await db.run(`INSERT INTO profile (
@@ -45,7 +45,7 @@ const initDb = {
       name,
       daily_hours,
       total_hours,
-      ceated_at
+      created_at
       ) VALUES (
         "Pizzaria Guloso",
         2,
@@ -57,7 +57,7 @@ const initDb = {
       name,
       daily_hours,
       total_hours,
-      ceated_at
+      created_at
       ) VALUES (
         "OneTwo Projects",
         3,
