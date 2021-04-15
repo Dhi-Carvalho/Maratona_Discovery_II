@@ -54,8 +54,6 @@ module.exports = {
 
     await Job.delete(jobId);
 
-    console.log(jobId)
-
     return res.redirect("/");
   },
 };
