@@ -29,7 +29,7 @@ form .input-group .input-wrapper + .input-wrapper {
 }
 
 form .input-wrapper {
-  width: 50%;
+  width: 100%;
 }
 
 label {
